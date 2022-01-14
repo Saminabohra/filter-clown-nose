@@ -1,6 +1,7 @@
 NoseX = 0;
 NoseY = 0;
 function preload(){
+    clown_nose = loadImage("https://i.postimg.cc/639xhck6/CLOWN-NOSE.png");
 }
 
 function setup(){
@@ -16,9 +17,10 @@ function setup(){
 
 function draw(){
     image(video,0,0,300,300);
-fill("red");
-stroke("red");
-circle(NoseX,NoseY,20);
+    image(clown_nose,NoseX,NoseY,20,20);
+//fill("red");
+//stroke("red");
+//circle(NoseX,NoseY,20);
 
 }
 
