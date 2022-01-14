@@ -1,7 +1,7 @@
 NoseX = 0;
 NoseY = 0;
 function preload(){
-    clown_nose = loadImage("https://www.pngfind.com/pngs/m/48-482965_red-nose-png-circle-transparent-png.png");
+    clown_nose = loadImage("https://i.postimg.cc/nVK5VqQp/clownnose.png");
 }
 
 function setup(){
@@ -17,7 +17,7 @@ function setup(){
 
 function draw(){
     image(video,0,0,300,300);
-    image(clown_nose,NoseX,NoseY,20,20);
+    image(clown_nose,NoseX-10,NoseY-10,20,20);
 //fill("red");
 //stroke("red");
 //circle(NoseX,NoseY,20);
