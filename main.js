@@ -1,3 +1,5 @@
+NoseX = 0;
+NoseY = 0;
 function preload(){
 }
 
@@ -16,7 +18,7 @@ function draw(){
     image(video,0,0,300,300);
 fill("red");
 stroke("red");
-circle(7,7,20);
+circle(NoseX,NoseY,20);
 
 }
 
@@ -33,5 +35,7 @@ function getPose(result){
         console.log(results);
         console.log('nose x = '+ result[0].pose.nose.x);
         console.log('nose y = '+ result[0].pose.nose.y);
+        NoseX = result[0].pose.nose.x;
+     NoseY = result[0].pose.nose.y;
     }
 }
