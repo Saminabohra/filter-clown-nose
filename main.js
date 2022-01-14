@@ -17,7 +17,7 @@ function setup(){
 
 function draw(){
     image(video,0,0,300,300);
-    image(clown_nose,NoseX-10,NoseY-10,20,20);
+    image(clown_nose,NoseX,NoseY,20,20);
 //fill("red");
 //stroke("red");
 //circle(NoseX,NoseY,20);
